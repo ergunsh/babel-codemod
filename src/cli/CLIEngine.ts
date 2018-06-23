@@ -1,14 +1,14 @@
 import * as realFs from 'fs';
 import getStream = require('get-stream');
-import { BabelPlugin } from './BabelPluginTypes';
-import Config from './Config';
-import InlineTransformer from './InlineTransformer';
-import iterateSources from './iterateSources';
-import ProcessSnapshot from './ProcessSnapshot';
+import { BabelPlugin } from '../BabelPluginTypes';
+import Config from '../Config';
+import InlineTransformer from '../InlineTransformer';
+import iterateSources from '../iterateSources';
+import ProcessSnapshot from '../ProcessSnapshot';
 import TransformRunner, {
   Source,
   SourceTransformResult
-} from './TransformRunner';
+} from '../TransformRunner';
 
 export class RunResult {
   constructor(readonly stats: RunStats) {}

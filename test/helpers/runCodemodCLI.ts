@@ -1,6 +1,6 @@
 import getStream = require('get-stream');
 import { PassThrough } from 'stream';
-import run from '../../src/index';
+import run from '../../src/cli/index';
 
 export type CLIResult = { status: number; stdout: string; stderr: string };
 

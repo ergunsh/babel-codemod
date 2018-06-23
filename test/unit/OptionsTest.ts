@@ -1,7 +1,7 @@
 import { deepEqual, ok, strictEqual, throws } from 'assert';
 import { inspect } from 'util';
+import Options, { Command } from '../../src/cli/Options';
 import Config, { Printer } from '../../src/Config';
-import Options, { Command } from '../../src/Options';
 
 describe('Options', function() {
   it('has sensible defaults', function() {

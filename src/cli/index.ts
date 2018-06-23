@@ -1,10 +1,10 @@
 import * as realFs from 'fs';
 import getStream = require('get-stream');
 import { basename } from 'path';
+import Config from '../Config';
+import { SourceTransformResult } from '../TransformRunner';
 import CLIEngine from './CLIEngine';
-import Config from './Config';
 import Options, { Command } from './Options';
-import { SourceTransformResult } from './TransformRunner';
 
 // Polyfill `Symbol.asyncIterator` so `for await` will work.
 if (!Symbol.asyncIterator) {
@@ -110,7 +110,7 @@ EXAMPLES
 }
 
 function printVersion(argv: Array<string>, out: NodeJS.WritableStream) {
-  out.write(require('../package.json').version);
+  out.write(require('../../package.json').version);
   out.write('\n');
 }
 

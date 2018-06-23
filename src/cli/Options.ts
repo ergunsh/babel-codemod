@@ -2,8 +2,8 @@ import { existsSync, readFileSync } from 'fs';
 import { hasMagic as hasGlob, sync as globSync } from 'glob';
 import { resolve } from 'path';
 import { sync as resolveSync } from 'resolve';
-import Config, { ConfigBuilder, Printer } from './Config';
-import { RequireableExtensions } from './extensions';
+import Config, { ConfigBuilder, Printer } from '../Config';
+import { RequireableExtensions } from '../extensions';
 
 export interface RunCommand {
   kind: 'run';
