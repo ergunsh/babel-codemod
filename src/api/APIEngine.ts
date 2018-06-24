@@ -6,11 +6,7 @@ import ProcessSnapshot from '../ProcessSnapshot';
 import { Source, SourceTransformResult } from '../TransformRunner';
 
 export default class APIEngine {
-  constructor(
-    readonly config: Config,
-    readonly onTransform: (result: SourceTransformResult) => void = () => {},
-    readonly source: Source
-  ) {}
+  constructor(readonly source: Source, readonly config: Config) {}
 
   private async loadPlugins(): Promise<Array<BabelPlugin>> {
     let snapshot = new ProcessSnapshot();
@@ -45,8 +41,6 @@ export default class APIEngine {
     } catch (err) {
       result = new SourceTransformResult(this.source, null, err);
     }
-
-    this.onTransform(result);
 
     return result;
   }
