@@ -1,4 +1,4 @@
-import Config, { ConfigBuilder, Printer } from '../Config';
+import { ConfigBuilder, Printer } from '../Config';
 import { Source, SourceTransformResult } from '../TransformRunner';
 import APIEngine from './APIEngine';
 

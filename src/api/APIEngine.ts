@@ -1,8 +1,8 @@
 import { BabelPlugin } from '../BabelPluginTypes';
 import Config from '../Config';
-import Transformer from '../Transformer';
 import InlineTransformer from '../InlineTransformer';
 import ProcessSnapshot from '../ProcessSnapshot';
+import Transformer from '../Transformer';
 import { Source, SourceTransformResult } from '../TransformRunner';
 
 export default class APIEngine {
