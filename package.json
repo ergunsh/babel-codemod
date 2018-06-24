@@ -2,7 +2,7 @@
   "name": "babel-codemod",
   "version": "0.0.0-development",
   "description": "babel-codemod rewrites JavaScript using babel plugins.",
-  "main": "src/index.js",
+  "main": "src/api/index.js",
   "scripts": {
     "prepublishOnly": "yarn test",
     "lint": "tslint --project .",
